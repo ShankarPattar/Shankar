@@ -1,141 +1,183 @@
-ಬಂದಿದ್ದೆ ನಿಮ್ಮನೆಗೆ ಅಪ್ಪ ಅಮ್ಮನ ಜೊತೆಗೆ, 
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>3 Column Layout</title>
+	<style type="text/css">
 
-ಕರೆದರು ಹೊರಗಿಂದ ಬಾರಮ್ಮ ಪಲ್ಲವಿ 
-ನಡೆದು ಬಂದೆ ನೀ ಮನೆಯೊಳಗಿಂದ ಮೆಲ್ಲನೆ, 
-ಬಂಗಾರ ಬಣ್ಣದ ಸೀರೆ ಕುಂಕುಮದ ಹಣೆಬೊಟ್ಟು, 
-ನೀಳ ದೇಹಕೆ ಸುತ್ತಿದ ಸೀರೆಯೇ ನಾಚಿಕೊಂಡಿತ್ತು,
-ಹೆಜ್ಜೆ ಇಟ್ಟು ನಡೆದಾಗ ನನ್ನ ಎದೆ ಮೇಲೆ ನಡೆದಂತಿತ್ತು, 
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
 
-ಮಾತನಾಡಿಸು ಅವಳನ್ನೊಮ್ಮೆ ಎಂದರು 
-ಆದರೆ  ಅವರಿಗೇನು ಗೊತ್ತು
-ನಿನ್ನನ್ನು ನೋಡಿದ ಮೇಲೆ ನನ್ನ ಉಸಿರುಗಟ್ಟಿತ್ತು.
-ಗುಣಗಿದ ನಮ್ಮಣ್ಣ ಸೂರ್ಯ ಮುಳುಗುವ ಮುನ್ನ 
-ತಲುಪಬೇಕು  ನಮ್ಮನೆಯನ್ನ
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
 
-ನಡೆದು ಬಂದೆವು ಎಲ್ಲರು ಮನೆಯಿಂದ ಹೊರಗೆ,
-ಕಣ್ಣು ನೆಟ್ಟಿತ್ತು ನೀನು ಕುಳಿತಿರುವ ಆ ಕುರ್ಚಿಯ ಕಡೆಗೆ, 
-ಹೊರಡಲೇಬೇಕಿತ್ತು ಅನಿವಾರ್ಯ ನನಗೆ,
-ಬರುವ ದಾರಿಯಲ್ಲಿ ಪೂರ್ತಿ ನಿನ್ನದೇ ಗುಣಗಾನ,
-ಯಾರೂ ಖರೀದಿಸದ ನನ್ನ ಮನಸಿಗೆ ಕುಡಿದಂತೆ ಮಧುಪಾನ,
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
 
-ಅಂದಳು ಅಮ್ಮ ಭಾವಚಿತ್ರವ ನೋಡಿ 
-ಇವಳೇ ನಿನಗೆ ಸರಿಯಾದ ಜೋಡಿ, 
-ಕೇಳಿದ ಕ್ಷಣ ಹೃದಯವೆಲ್ಲ ಪುಳಕ 
-ಹೊಸ ಕನಸುಗಳು ಮೂಡಲು ಪೂರಕ,
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
 
-ಬರಿದಾಗಿದ್ದ ಹೃದಯದಲ್ಲಿ ಪ್ರೀತಿ ಮೊಳಕೆಯೊಡಿಯಿತು,
-ಪ್ರತಿಸಲವೂ ನೆನೆದಾಗ ನುಡಿಯುತಿದೆ ಹೊಸರಾಗ,
-ಮೆದುಳಿಗೆ ಮೆರಗು ಹೊಸ ಯೋಚನೆಗಳ ಅನುರಾಗ,
-ಮೌನವಾಗಿದ್ದ  ಮಾತು ಹಾಡಲಾರಂಭಿಸಿತು,
-ಜಿನುಗು ಪ್ರೀತಿಯ ಹನಿಗೆ ಮನಸು ಕಂಪಿಸಿತು,
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
 
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
 
- 
-ಮಾತನಾಡಿದ್ದರು ಹಿರಿಯರೆನಿಸಿಕೊಂಡವರು, 
-ಸೂಕ್ತರೆನಿಸುವ ಮಾತು ಆಪ್ತರಾಗುವ ಮಾತು, 
-ವಿನಯ ವಿನಂತಿಗಳ ಭಾವ ತುಂಬಿದ ಮಾತು,
-ಆತ್ಮಗಳ ಆಲಿಂಗನ ಭಾಂದವ್ಯದ ಸಮ್ಮಿಲನ,
-ಇದೆಲ್ಲ ಸ್ವಲ್ಪ ದಿನ ಆಮೇಲೆ ಎಲ್ಲವೂ ಮೌನ 
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
 
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #BCCE98;
+		}
 
-ಪ್ರೀತಿಯಲ್ಲಿ ಸೋಲುವುದನ್ನು ಕಲಿಸಿದೆ ಆದರೆ ನಿನ್ನ ಬಿಟ್ಟು ಬದುವುಕುವದನ್ನ ಕಲಿಸಲಿಲ್ಲ. 
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#right {
+			background: #F7FDEB;
+		}
 
+		#center {
+			background: #fff;
+		}
 
-ಮನವರಿಯದೆ ಹಿಡಿ ಪ್ರೀತಿ ಬಯಸಿರುವೆ
-ಬಾ ಜನುಮಕೆ ಜೊತೆಯಾಗಿ,
-ಭರವಸೆಯ ರಭಸದಲಿ ನಲಿಸುವೆನು ಹಿತವಾಗಿ
-ಜೀವಿಸುತಿದೆ ಹೃದಯ ನಿನಗಾಗಿ, 
-ಈ ದೇಹ ಉಸಿರಾಡುತ್ತಿದೆ ನಿನಗಾಗಿ,
-ನಿನಗಾಗಿ ಸೋಲುವುದುರಲ್ಲಿ ಹಿತವಿದೆ 
-ನಿನಗಾಗಿ ಕಾಯುವುದರಲ್ಲಿ ಸುಖವಿದೆ
-ನಿನ್ನ ಕಲ್ಪನೆಗೆ ಮೀರಿದಷ್ಟು ಪ್ರೀತಿ 
-ನನ್ನ ಎದೆಯೊಳಗೆ ಬಚ್ಚಿಟ್ಟಿದ್ದೇನೇ
-ನಿನ್ನ ನಗುವಿಗೆ ನಲಿವಿಗೆ ನಾನಿರುವೆ ನಿನಗಾಗಿ 
-ಬಾಳಂಚಿಗೂ ಜೊತೆಯಾಗಿ.
-
-
-ಹತ್ತಿರವಿದ್ದರು ತುಂಬಾ ದೂರ, 
-ಮಾತನಾಡುವುದಂತೂ ಇನ್ನೂ ದೂರ, 
-ಹತ್ತಿರವಾಗುವ ಮಾತು ದೂರವೇ ದೂರ 
-ಪ್ರೀತಿ ವ್ಯಕ್ತಪಡಿಸುವುದು ನನ್ನಲ್ಲಿ ಕಾತರ 
-ಒಪ್ಪುವೆಯಾ ಎನ್ನುವ ಪ್ರಶ್ನೆ ನಿರಂತರ 
-ಯೋಚಿಸುವೆ ದೂರವಾಗಿಯೇ ಇರಲೇ ನಿನ್ನ ಜೀವನದಿಂದ ನಿರಂತರ 
+		#container .column {
+			padding-top: 1em;
+		}
+		
+	</style>
 	
-ತಿಳಿದಿದ್ದು ತಿಳಿಯದ ಹಾಗೆ ನೋಡಿದ್ದು ನೋಡದವರ ಹಾಗೆ, 
-ಪ್ರೀತಿ ಬಯಸಿದ್ದು ಬಯಸದವರ ಹಾಗೆ 
+	<script type="text/javascript">
+		/* =============================
+		This script generates sample text for the body content. 
+		You can remove this script and any reference to it. 
+		 ============================= */
+		var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+		function generateText(sentenceCount){
+			for (var i=0; i<sentenceCount; i++)
+			document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+		}
+	</script>	
+</head>
 
-ನಿನ್ನ ವಿಳಾಸ ಕೊಡು ನನ್ನ ಹೃದಯ ಕಳೆದುಹೋಗಿದೆ
-ನನ್ನ ಕೈಗೆ ಸಿಗುತ್ತಿಲ್ಲ ತುಂಬಾ ಹಠಮಾರಿಯಾಗಿದೆ 
-ಯಾಕೋ ನಿನ್ನ ಹೃದಯವನ್ನು ಹುಡುಕುತ್ತ ಬಂದಹಾಗಿದೆ
+<body>
 
-ಅಂತರ್ಜಾಲದಲೋಕದಲ್ಲಿ ಬಂತೊಮ್ಮೊ ಮುಖಪುಟದ ಕೋರಿಕೆ,
-ಅವಳೊಂದು ಮಂದಾರ ಪುಷ್ಪದ ನವಿರಾದ ಗರಿಕೆ,
-ನೋಡಿದ ಕ್ಷಣದಿಂದ ನನಗಾಗಿದೆ ಅವಳದೇ ಭ್ರಮಿಕೆ,
-ವ್ಯಾಸಂಗದಲ್ಲಿ ಜೊತೆಯಾಗಿದ್ದಳು ಆಕೆ,
-ಮಾಡುವುದೇನು ಈಗಾಗಿದೆ ಸಹಪಾಠಿ ಎಂದು ಮನವರಿಕೆ,
-ಅವಳ ಅಂದ ಹೇಳ ತೀರದು ಉಟ್ಟಾಗ ಸೀರೆ ರವಿಕೆ,
-ಹಸನ್ಮುಖಿ ಅವಳು ಹ್ರುದಯ ಕದ್ದಾಳು ಜೋಕೆ.
+	<header id="header"><p>Header...</p></header>
 
+	<div id="container">
 
+		<main id="center" class="column">
+			<article>
+			
+				<h1>Heading</h1>
+				<p><script>generateText(50)</script></p>
+			
+			</article>								
+		</main>
 
-ಬೆಳದಿಂಗಳಂತೆ ಹೊಳೆವ ನಿನ್ನ ಮುಖವನ್ನೊಮ್ಮೆ ತಂಗಾಳಿಯಾಗಿ ಸೋಕುವ ಆಸೆ,
-ನಿನ್ನಂತರಾಳದಲ್ಲಿ ಅಡಗಿರುವ ಹೂವಿನಂಥ ಹೃದಯವನ್ನೊಮ್ಮೆ ದುಂಬಿಯಾಗಿ ಸ್ಪರ್ಶಿಸುವ ಆಸೆ,
-ಸ್ವಪ್ನದಲ್ಲೂ ಬಿಡದೆ ಕಾಡುವ ಚೆಲುವೆ ನಿನ್ನೊಡನಾಡಿಯಾಗುವ ಆಸೆ,
-ಬದುಕೆಂಬ ಬೃಂದಾವನದಿ ನಿನ್ನೊಂದಿಗೆ ಜೊತೆಯಾಗಿ ಜೀವನ ಪಯಣ ನಡೆಯುವ ಆಸೆ.
+		<nav id="left" class="column">
+			<h3>Left heading</h3>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>
+			<h3>Left heading</h3>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>
 
-ಶುರುವಾಗದ ಪ್ರೀತಿ ಸ್ಮರಿಸಿದರೇನು,
-ಸಿಗದವರನ್ನು ಬಯಸಿದರೇನು,
-ಅರಿಯದವರಿಗೆ ಒಲವ ಅರುಹಿದರೇನು,
-ಬೆರೆಯದವರ ಕೊಸರ ತಡೆದರೇನು
+		</nav>
 
-ಒಲವ ಧಾರೆಯ ಸುರಿದ ಫಲವಾಗಿ,
-ಒಲಿವ ಮನಸಿನ ಸೊಬಗಿನ ಸಲುವಾಗಿ,
-ಕಂಡ ಕನಸು ನನಸಾಗುವ ಸಿರಿಯ ಸಲುವಾಗಿ,
-ನೀನು ನನಗೊಲಿಯುವೆಯೆಂದು ಮನ ಹೇಳುತಿದೆ ಮೆಲುವಾಗಿ,
-ಕಂಗಳೆರಡು ಅರಸುತಿವೆ ತುಂಬಿಕೊಳ್ಳಲು ಕಣ್ಣೀರು 
-ನೀ ನನಗಪ್ಪಿದಾಗ ಮ್ರುದುವಾಗಿ,
-ಜನ ಅರಿಯದ ನಮ್ಮ ಪ್ರೀತಿಗೆ ದೇವ ದೈವಂಗಳ್ಹರಸುವರು 
- ನಮ್ಮಿಬ್ಬರ ಒಳಿತಿಗಾಗಿ.
+		<div id="right" class="column">
+			<h3>Right heading</h3>
+			<p><script>generateText(1)</script></p>
+		</div>
 
+	</div>
 
+	<div id="footer-wrapper">
+		<footer id="footer"><p>Footer...</p></footer>
+	</div>
 
+</body>
 
-ಅನಿಸುವುದು ಹೀಗೊಮ್ಮೆ ಬೆಟ್ಟದಾ ತುದಿ ಏರಿ ಕೇಳಲೇ ಪ್ರೀತಸುವೆಯಾ ಎಂದು,
-ಪ್ರತಿಧ್ವನಿಯೇ ಸಾಕು ತಿಳಿಯುವೆನು ನೀ ಕೇಳಿದಂತೆ ಪ್ರೀತಿಸುವೆಯಾ ಎಂದು,
-ಅನಿಸುವುದು ಹೀಗೊಮ್ಮೆ ಕಿಕ್ಕಿರಿದ ಜನರಲ್ಲಿ ಲೆಕ್ಕಿಸದೇ ಏನನ್ನೂ ಕೂಗಲೇ ನಿನ್ನೊಮ್ಮೆ ಭಾವನಾ ಎಂದು,
-ನಿಮಿಷವಾರೂ ಸರಿ ನಿಶ್ಯಬ್ಧವಾದರೆ ಸಾಕು ತಿಳಿಯುವೆನು ನಿನ್ನ ಮೌನವಿದು ಸಮ್ಮತಿ ಎಂದು,
-ಅನಿಸುವುದು ಹೀಗೊಮ್ಮೆ ಬರೆದು ಕೇಳಲೇ ಒಮ್ಮೆ ನೆತ್ತರದಿ ಪತ್ರವನು ಪ್ರೀತಿಸುವೆಯಾ ಎಂದು,
-ಪತ್ರಕ್ಕೆ ಉತ್ತರ ಬರದಿದ್ದರೂ ಸರಿ ತಿಳಿಯುವೆನು ಪತ್ರ ತಲುಪದೇ ಇರಬಹುದೆಂದು,
-ಅನಿಸುವುದು ಹೀಗೊಮ್ಮೆ ಎದುರಾಗಿ ಕೈ ಹಿಡಿದು ಕೇಳಲೇ ಪ್ರೀತಿಸುವೆಯಾ ಎಂದು,
-ಕೈ ಬಿಡಿಸದಿರೆ ಸಾಕು ತಿಳಿಯುವೆನು ನನ್ನ ಕಿರುಬೆರಳು ಹಿಡಿವ ಜೊತೆಗಾತಿ ಎಂದು.
-
-ಹ್ರುದಯ ಸ್ವೀಕರಿಸೆ
-ಕೊಂಡು ಸಂಸ್ಕರಿಸೆ
-ಪ್ರಾಣ ಪಯಣಿಸಲು
-ಶ್ರಾದ್ಧ ಆಚರಿಸೆ,
-ಸಾಯ್ಸೆ ಸಾಯ್ಸೆ
-ಪ್ರೀತ್ಸೀ ಸಾಯ್ಸೆ
- 
- 
-ನಿನಗೆ ಅನಿಸಿದ್ದು ನನಗೆ ಬೇಕಿಲ್ಲ,
-But ನನಗೆ ಅನಿಸಿದ್ದು ನಿನಗೆ ತಿಳಿತಿಲ್ಲ,
-
- ಪ್ರೀತಿಗೆ ಕಣ್ಣಿಲ್ಲ ಅಂತ ಜಗತ್ತಿಗೆ ಸಮಜಾಯಿಸಲು 
-ಮನಸ್ಸಿನ ಮಾತಿಗೆ ಮೆದುಳು ಅನುಕರಿಸಿ
-ಭಾವನೆಗಳು ಜೊತೆಗೂಡಿಸಿ
-ನಿನ್ನನ್ನು ಸಮಜಾಯಿಸುವ ಮಧುರ ಪ್ರಯತ್ನ,
-ನಿನ್ನ ಮನಸಿನ ಮೂಲೆಗೆ ಸ್ವಲ್ಪನಾದರೂ ಕನಿಕರದ 
-ಕಿಡಿ ಮೂಡಿ ಬೆಂಕಿಯ ತರ ಮನಸಿನ ಮೂಲೆಯಿಂದ 
-ಪ್ರೀತಿ ಹೊರಗೆ ಜ್ವಾಲೆಯಂತೆ ಧುಮ್ಮುಕ್ಕಲಿ
-ಅಂತ ಸಣ್ಣ ಕಿಡಿ ತಾಕಿಸುವ ಪ್ರಯತ್ನ.
-
-
- ಪ್ರೀತಿ ಸಿಗಲು ಪ್ರತಿಭಟಿಸಬೇಕಿಲ್ಲ
-ಮಧುರ ಭಾವನೆಗಳ ಸೆಳೆತ ಸಾಕು
-ಮನಸು ಜಾರಿ ಹಿಡಿತದಿಂದ ಕೊಸರಲು ಒಂದು ಸುಮಧುರ ಕ್ಷಣ ಸಾಕು.
-ಎಲ್ಲರಲ್ಲೂ ಅಸಮಾನ್ಯ ಅನಿಸಿಕೊಳ್ಳುವವರೆಲ್ಲಾ ಸಾಮಾನ್ಯರಾಗೆ ಅಸಮಾನ್ಯ ಅನ್ನೊ ಪಟ್ಟವನ್ನು ಗಿಟ್ಟಿಸ್ಕೊಂಡಿರ್ತಾರೆ
-ನೀ ಎದೆಯೊಳಗೆ ಬಂದಮೇಲೆ
-ನನ್ನಾ ಹ್ರದಯಾನೆ ಕನಸುಗಳ ಪಾಠಶಾಲೆ
- ಹೇಳೆ ಗೆಳತಿಯೆ ..
-ಹೇಗಿರಲಿ ನಿನಗೆ ಹೇಳದೆ
-
+</html>
