@@ -1,183 +1,131 @@
 <!DOCTYPE html>
-<!-- Template by quackit.com -->
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>3 Column Layout</title>
-	<style type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ {
+    box-sizing: border-box;
+}
 
-		/* Layout */
-		body {
-			min-width: 630px;
-		}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-		#container {
-			padding-left: 200px;
-			padding-right: 190px;
-		}
-		
-		#container .column {
-			position: relative;
-			float: left;
-		}
-		
-		#center {
-			padding: 10px 20px;
-			width: 100%;
-		}
-		
-		#left {
-			width: 180px;
-			padding: 0 10px;
-			right: 240px;
-			margin-left: -100%;
-		}
-		
-		#right {
-			width: 130px;
-			padding: 0 10px;
-			margin-right: -100%;
-		}
-		
-		#footer {
-			clear: both;
-		}
-		
-		/* IE hack */
-		* html #left {
-			left: 150px;
-		}
+header {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
 
-		/* Make the columns the same height as each other */
-		#container {
-			overflow: hidden;
-		}
 
-		#container .column {
-			padding-bottom: 1001em;
-			margin-bottom: -1000em;
-		}
+}
 
-		/* Fix for the footer */
-		* html body {
-			overflow: hidden;
-		}
-		
-		* html #footer-wrapper {
-			float: left;
-			position: relative;
-			width: 100%;
-			padding-bottom: 10010px;
-			margin-bottom: -10000px;
-			background: #fff;
-		}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-		/* Aesthetics */
-		body {
-			margin: 0;
-			padding: 0;
-			font-family:Sans-serif;
-			line-height: 1.5em;
-		}
-		
-		p {
-			color: #555;
-		}
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
 
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		nav ul a {
-			color: darkgreen;
-			text-decoration: none;
-		}
-
-		#header, #footer {
-			font-size: large;
-			padding: 0.3em;
-			background: #BCCE98;
-		}
-
-		#left {
-			background: #DAE9BC;
-		}
-		
-		#right {
-			background: #F7FDEB;
-		}
-
-		#center {
-			background: #fff;
-		}
-
-		#container .column {
-			padding-top: 1em;
-		}
-		
-	</style>
-	
-	<script type="text/javascript">
-		/* =============================
-		This script generates sample text for the body content. 
-		You can remove this script and any reference to it. 
-		 ============================= */
-		var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
-		function generateText(sentenceCount){
-			for (var i=0; i<sentenceCount; i++)
-			document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-		}
-	</script>	
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
 </head>
-
 <body>
 
-	<header id="header"><p>Header...</p></header>
+<header>
+  <h2>ಪ್ರೀತಿ </h2>
+</header>
+<section>
+   
+  <article>
+  <h1>1<h1/>
+<p>ತಿಳಿದಿದ್ದು ತಿಳಿಯದ ಹಾಗೆ ನೋಡಿದ್ದು ನೋಡದವರ ಹಾಗೆ <br/>
+ಪ್ರೀತಿ ಬಯಸಿದ್ದು ಬಯಸದವರ ಹಾಗೆ  <br/>
+ನಿನ್ನ ವಿಳಾಸ ಕೊಡು ನನ್ನ ಹೃದಯ ಕಳೆದುಹೋಗಿದೆ <br/>
+ನನ್ನ ಕೈಗೆ ಸಿಗುತ್ತಿಲ್ಲ ತುಂಬಾ ಹಠಮಾರಿಯಾಗಿದೆ  <br/>
+ಯಾಕೋ ನಿನ್ನ ಹೃದಯವನ್ನು ಹುಡುಕುತ್ತ ಬಂದಹಾಗಿದೆ
+</p>
+<h1>2<h1/>
+  <p>
+  ಅಂತರ್ಜಾಲದಲೋಕದಲ್ಲಿ ಬಂತೊಮ್ಮೊ ಮುಖಪುಟದ ಕೋರಿಕೆ<br/>
+ಅವಳೊಂದು ಮಂದಾರ ಪುಷ್ಪದ ನವಿರಾದ ಗರಿಕೆ<br/>
+ನೋಡಿದ ಕ್ಷಣದಿಂದ ನನಗಾಗಿದೆ ಅವಳದೇ ಭ್ರಮಿಕೆ<br/>
+ವ್ಯಾಸಂಗದಲ್ಲಿ ಜೊತೆಯಾಗಿದ್ದಳು ಆಕೆ<br/>
+ಮಾಡುವುದೇನು ಈಗಾಗಿದೆ ಸಹಪಾಠಿ ಎಂದು ಮನವರಿಕೆ<br/>
+ಅವಳ ಅಂದ ಹೇಳ ತೀರದು ಉಟ್ಟಾಗ ಸೀರೆ ರವಿಕೆ<br/>
+ಹಸನ್ಮುಖಿ ಅವಳು ಹ್ರುದಯ ಕದ್ದಾಳು ಜೋಕೆ<br/>
+</p>
+<h1>3<h1/>
+<p>ತಿಳಿದಿದ್ದು ತಿಳಿಯದ ಹಾಗೆ ನೋಡಿದ್ದು ನೋಡದವರ ಹಾಗೆ<br/>
+ಪ್ರೀತಿ ಬಯಸಿದ್ದು ಬಯಸದವರ ಹಾಗೆ <br/>
+ನಿನ್ನ ವಿಳಾಸ ಕೊಡು ನನ್ನ ಹೃದಯ ಕಳೆದುಹೋಗಿದೆ<br/>
+ನನ್ನ ಕೈಗೆ ಸಿಗುತ್ತಿಲ್ಲ ತುಂಬಾ ಹಠಮಾರಿಯಾಗಿದೆ <br/>
+ಯಾಕೋ ನಿನ್ನ ಹೃದಯವನ್ನು ಹುಡುಕುತ್ತ ಬಂದಹಾಗಿದೆ</p>
+<h1>4<h1/>
+<p>
+ಬೆಳದಿಂಗಳಂತೆ ಹೊಳೆವ ನಿನ್ನ ಮುಖವನ್ನೊಮ್ಮೆ ತಂಗಾಳಿಯಾಗಿ ಸೋಕುವ ಆಸೆ<br/>
+ನಿನ್ನಂತರಾಳದಲ್ಲಿ ಅಡಗಿರುವ ಹೂವಿನಂಥ ಹೃದಯವನ್ನೊಮ್ಮೆ ದುಂಬಿಯಾಗಿ ಸ್ಪರ್ಶಿಸುವ ಆಸೆ<br/>
+ಸ್ವಪ್ನದಲ್ಲೂ ಬಿಡದೆ ಕಾಡುವ ಚೆಲುವೆ ನಿನ್ನೊಡನಾಡಿಯಾಗುವ ಆಸೆ<br/>
+ಬದುಕೆಂಬ ಬೃಂದಾವನದಿ ನಿನ್ನೊಂದಿಗೆ ಜೊತೆಯಾಗಿ ಜೀವನ ಪಯಣ ನಡೆಯುವ ಆಸೆ
+</p>
+<h1>5<h1/>
+<p> ಪ್ರೀತಿಗೆ ಕಣ್ಣಿಲ್ಲ ಅಂತ ಜಗತ್ತಿಗೆ ಸಮಜಾಯಿಸಲು <br/>
+ಮನಸ್ಸಿನ ಮಾತಿಗೆ ಮೆದುಳು ಅನುಕರಿಸಿ<br/>
+ಭಾವನೆಗಳು ಜೊತೆಗೂಡಿಸಿ<br/>
+ನಿನ್ನನ್ನು ಸಮಜಾಯಿಸುವ ಮಧುರ ಪ್ರಯತ್ನ<br/>
+ನಿನ್ನ ಮನಸಿನ ಮೂಲೆಗೆ ಸ್ವಲ್ಪನಾದರೂ ಕನಿಕರದ <br/>
+ಕಿಡಿ ಮೂಡಿ ಬೆಂಕಿಯ ತರ ಮನಸಿನ ಮೂಲೆಯಿಂದ <br/>
+ಪ್ರೀತಿ ಹೊರಗೆ ಜ್ವಾಲೆಯಂತೆ ಧುಮ್ಮುಕ್ಕಲಿ<br/>
+ಅಂತ ಸಣ್ಣ ಕಿಡಿ ತಾಕಿಸುವ ಪ್ರಯತ್ನ.</p>
+<h1>6<h1/>
+<p>ನೀನಿರದ ಸಮಯದಲ್ಲಿ ಕಾಡುವುದು ನನ್ನನು<br/>
+ನೀನಿರುವ ಕ್ಷಣಗಳು ಅಂಬರದಲ್ಲಿನ ಬಿಲ್ಲಿನ ಮೇಲೆ ಜೀವಿಸಿದ ಅನುಭವ<br/>
+ಆಗುವೆ ನೀನಿರದ ಕ್ಷಣಗಳು ಸಮುದ್ರದಿಂದ ತೀರಕ್ಕೆ ಎಸೆದ ಮೀನಿನಂತೆ ನಾ<br/>
+ನೀನಿದ್ದರೆ ಸಾಕು ಬರೆಯುವೆ ನಮ್ಮದೇ ಒಂದು ಪ್ರೇಮದ ಕಾದಂಬರಿ<br/> 
+ನೀನಿರದಾಗ ಒಂಟಿತನದಲ್ಲೇ ನಿನ್ನನ್ನು ಅನುಭವಿಸುವೆ ನೀನು ಜೊತೆಯಾಗಿರುವೆ <br/>
+ ಭಾವಿಸುವೆ ಜೀವಿಸುವೆ ನೀನು ಮೌನವಾಗಿರುವೆ ಎಂದು</p>
+ <h1>7<h1/>
+ <p>ಅನಿಸುವುದು ಹೀಗೊಮ್ಮೆ ನಾನೇಕೆ ಮೂಡಿ ಎಂದು <br/>
+ನನೆಗೇನು ತಿಳಿದಿಲ್ಲ ನೀನೇ ಹೇಳು ಏನು ಮೋಡಿ  ಮಾಡಿರುವೆ ಎಂದು<br/>
+ಪ್ರೀತಿಯಲ್ಲಿ ಆಕಾಶವನ್ನೇರಿ ಜಗತ್ತು ಸುತ್ತಿದಷ್ಟೇ ಖುಷಿ <br/>
+ನನಗೆ ನೀನೇ ಜಗತ್ತು <br/>
+ಎಷ್ಟು ಸುತ್ತಿದರೂ ನನಗೆ ನಿನ್ನ ಸುತ್ತುವುದಷ್ಟೇ ಖುಷಿ</p>
+<h1>8<h1/>
+<p>
+ನೀನು ನನ್ನ ಪ್ರೀತಿಸುವೆ ಎನ್ನುವ ಪ್ರೀತಿಯ ಮರೀಚಿಕೆಯನ್ನು ಬೆನ್ನಟ್ಟಿ ಬಂದಿರುವೆ<br/>
+ನೀನು ಸಿಗುವ ಭರವಸೆಯಲ್ಲಿ ಜೀವನದ ಭಾಗಗಳೆಲ್ಲವನ್ನು ತೊರೆದಿರುವೆ<br/>
+ಸಿಗುವೆ ಎನ್ನುವ ಆಸೆಯನ್ನೊಮ್ಮೆ ಪೂರೈಸಿಬಿಡು<br/>
+ಇಲ್ಲವಾದರೆ ಬಂದಿರುವ ದಾರಿಯಲ್ಲಿ ಉಸಿರುಗಟ್ಟಿ ಸಾಯುವೆನು ಮರೆತುಬಿಡು.</p>
+<h1>9<h1/>
+<p>
+ಒಂದೇ ಒಂದು ಕ್ಷಣ ನನಗಾಗಿ ಮೀಸಲಿಡು <br/>
+ಪ್ರತಿ ಸಂದೇಶಗಳಿಗೊಮ್ಮೆ ಮರು ಸಂದೇಶ ಕಳಿಸಿಬಿಡು <br/>
+ಏಕೆಂದರೆ ಪ್ರತಿ ಸಂದೇಶಗಳೆಲ್ಲ ನಿನಗಾಗಿ ಮೀಸಲಿಟ್ಟಿದ್ದೇನೆ <br/>
+ಪ್ರತಿ ಸಂದೇಶಗಳಲ್ಲಿ ನನ್ನ ಮನಸಿನ ಮಾತುಗಳ ಮೂಟೆಗಳನ್ನಿಟ್ಟಿದ್ದೇನೆ
+</p>
 
-	<div id="container">
+</article>    
+</section>
 
-		<main id="center" class="column">
-			<article>
-			
-				<h1>Heading</h1>
-				<p><script>generateText(50)</script></p>
-			
-			</article>								
-		</main>
-
-		<nav id="left" class="column">
-			<h3>Left heading</h3>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-			</ul>
-			<h3>Left heading</h3>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-			</ul>
-
-		</nav>
-
-		<div id="right" class="column">
-			<h3>Right heading</h3>
-			<p><script>generateText(1)</script></p>
-		</div>
-
-	</div>
-
-	<div id="footer-wrapper">
-		<footer id="footer"><p>Footer...</p></footer>
-	</div>
+<footer>
+  <p>ಹಾಗೆ ಸುಮ್ಮನೆ </p>
+</footer>
 
 </body>
-
 </html>
