@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -17,7 +17,7 @@ header {
     padding: 10px;
     text-align: center;
     font-size: 35px;
-    color: white;
+    color: red;
 }
 
 
@@ -51,9 +51,7 @@ footer {
 <header>
   <h2>ಪ್ರೀತಿ </h2>
 </header>
-<section>
-   
-  <article>
+
   <h1>1<h1/>
 <p>ತಿಳಿದಿದ್ದು ತಿಳಿಯದ ಹಾಗೆ ನೋಡಿದ್ದು ನೋಡದವರ ಹಾಗೆ <br/>
 ಪ್ರೀತಿ ಬಯಸಿದ್ದು ಬಯಸದವರ ಹಾಗೆ  <br/>
@@ -120,8 +118,7 @@ footer {
 ಪ್ರತಿ ಸಂದೇಶಗಳಲ್ಲಿ ನನ್ನ ಮನಸಿನ ಮಾತುಗಳ ಮೂಟೆಗಳನ್ನಿಟ್ಟಿದ್ದೇನೆ
 </p>
 
-</article>    
-</section>
+
 
 <footer>
   <p>ಹಾಗೆ ಸುಮ್ಮನೆ </p>
